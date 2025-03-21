@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>PDL</projectKey>
+    <exportDate>2025-03-21 15:21:43 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de Compra" index="1"/>
+        <folder fullPath="Login" index="0"/>
+        <folder fullPath="Pàgamento" index="2"/>
+    </folders>
+    <testCases>
+        <testCase id="230284477" key="PDL-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:09:05 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cadastro de novos usuários]]></name>
+            <objective><![CDATA[Verificar a funcionalidade de login.]]></objective>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And não esteja cadastrado no sistema
+
+When clicar em ‘Crie uma conta’
+
+Then será redirecionado para uma tela de criação de nova conta.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230285522" key="PDL-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:19:19 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And adicione um username não cadastrado
+
+When clicar em ‘criar conta’
+
+Then uma mensagem surgirá avisando que a conta não existe]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230285574" key="PDL-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:20:12 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente com cadastro informa dados incorretos de acesso]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And adicione um username correto
+
+When escreva uma senha incorreta
+
+Then uma mensagem surgirá avisando que a usuário ou senha inválidos.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230462369" key="PDL-T8">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-21 12:44:15 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja lembrar o usuário para novos logins]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+When informa dados de usuário e senha válido
+
+And clica em lembrar (vide prótotipo em anexo)
+
+Then deve ser guardado as informações para próximo acesso.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230462971" key="PDL-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-21 12:53:31 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja reset de senha]]></name>
+            <objective><![CDATA[Verificar a funcionalidade de reset de senha]]></objective>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And adicione um username correto
+
+And adicione uma senha inválida
+
+When uma mensagem surgirá avisando que a usuário ou senha inválidos.
+
+  Then clico em 'Esqueci minha senha' para processar o reset de senha. (conforme protótipo em anexo)]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230285723" key="PDL-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:32:35 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Carrinho de Compra]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Colocando produto no carrinho]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente decidiu produto e clica no bot&atilde;o &quot;ADD TO CART&quot;<br><br><br>]]></description>
+                        <expectedResult><![CDATA[Produto adicionado ao carrinho]]></expectedResult>
+                        <testData><![CDATA[Escolha do Produto]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Com produto adicionado ao carrinho<br id="isPasted"><br><br>]]></description>
+                        <expectedResult><![CDATA[Informar quantos produtos est&atilde;o no carrinho]]></expectedResult>
+                        <testData><![CDATA[Observe o carrinho]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="230285751" key="PDL-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:36:46 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Carrinho de Compra]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Removendo produto do carrinho]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente optando por desistir do produto escolhido<br id="isPasted">&nbsp;]]></description>
+                        <expectedResult><![CDATA[Item localizado no carrinho]]></expectedResult>
+                        <testData><![CDATA[Entrar no carrinho de compras e localizar produto]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Cliente escolhe item que aparece na lista de produtos selecionados<br>e clicar no bot&atilde;o &quot;REMOVE&quot;<br><br><br>]]></description>
+                        <expectedResult><![CDATA[Item removido do carrinho]]></expectedResult>
+                        <testData><![CDATA[Removendo item do carrinho]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Verificando carrinho]]></description>
+                        <testData><![CDATA[Observar se itens do carrinho conta com o item removido]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="230285771" key="PDL-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:40:30 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Pàgamento]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Realizando o pagamento da compra]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esta na tela de pagamento
+
+When verifica os valor como correto
+
+Then deve clicar no botão "FINISH"
+
+And receber a mensagem "THANK YOU FOR YOUR ORDER"]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="230285826" key="PDL-T7">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>PABLO ALVES FERNANDES</createdBy>
+            <createdOn>2025-03-19 22:47:19 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Pàgamento]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Informando dados na tela de checkout]]></name>
+            <owner>712020:5249c080-6f15-4bd0-b617-5642f155bfb0</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente decidiu finalizar a compra
+
+And clica no botão "CHECKOUT" do carrinho
+
+When cliente deve informar seus dados nome e cep
+
+And clicar no botão "CONTINUE"
+
+Then será encaminhado para tela de pagamento]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
